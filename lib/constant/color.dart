@@ -8,10 +8,11 @@ class NowUIColors {
   static const Color statusbar = Color(0xFF252836);
   static const Color acikyesil = Color(0xFF0CFEBC);
   static const Color yesilkoyu = Color(0xFF22B07D);
-  static const Color trncu = Color(0xFFFFB721);
+  static const Color trncu = Color(0xFFFCD240);
   static const Color binancebtn = Color(0xFFFF5C249);
   static const Color mavibtn = Color(0xFFFF215BF0);
   static const Color textField = Color(0xFF1F1D2B);
+  static const Color splash = Color(0xFFE5E5E5);
 
   static const Color card = Color(0xFFF252836);
   static const Color beyaz = Color(0xFFFFFFFF);

@@ -6,6 +6,7 @@
 
 import 'package:dogitravellerui/constant/color.dart';
 import 'package:dogitravellerui/page/onboarding/onboarding.dart';
+import 'package:dogitravellerui/page/splash/splash.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -39,11 +40,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: 'DogiTraveller',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-            backgroundColor: NowUIColors.homeclr, fontFamily: 'Poppins'),
-        initialRoute: '/onboard',
+        theme: ThemeData(backgroundColor: NowUIColors.homeclr),
+        initialRoute: '/splash',
         routes: <String, WidgetBuilder>{
-          '/onboard': (BuildContext context) => new OnBoarding(),
+          '/splash': (BuildContext context) => new Splash(),
+          '/onboard': (BuildContext context) => new MyApp(),
         });
   }
 }
