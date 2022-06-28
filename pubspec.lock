@@ -8,6 +8,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
+  animations:
+    dependency: "direct dev"
+    description:
+      name: animations
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.2"
   archive:
     dependency: transitive
     description:
@@ -408,6 +415,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.8"
+  ig_story:
+    dependency: "direct dev"
+    description:
+      name: ig_story
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.4"
   image:
     dependency: transitive
     description:
@@ -520,6 +534,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.9"
+  page_route_transition:
+    dependency: "direct dev"
+    description:
+      name: page_route_transition
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.2"
   page_transition:
     dependency: "direct dev"
     description:

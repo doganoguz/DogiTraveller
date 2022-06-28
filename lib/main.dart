@@ -5,7 +5,7 @@
 //Kuyumu kazmaya çalıştığın kürek benimse SAPINA DİKKAT ET ASLANIMMM EYVALLAH
 
 import 'package:dogitravellerui/constant/color.dart';
-import 'package:dogitravellerui/page/onboarding/onboarding.dart';
+import 'package:dogitravellerui/page/onboarding/one.dart';
 import 'package:dogitravellerui/page/splash/splash.dart';
 
 import 'package:flutter/material.dart';
@@ -44,7 +44,6 @@ class _MyAppState extends State<MyApp> {
         initialRoute: '/splash',
         routes: <String, WidgetBuilder>{
           '/splash': (BuildContext context) => new Splash(),
-          '/onboard': (BuildContext context) => new MyApp(),
         });
   }
 }

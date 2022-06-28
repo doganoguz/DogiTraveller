@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:dogitravellerui/constant/color.dart';
-import 'package:dogitravellerui/page/onboarding/onboarding.dart';
+import 'package:dogitravellerui/page/onboarding/one.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -17,8 +17,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 2), () async {
-      Navigator.pushReplacement(
-          context, new MaterialPageRoute(builder: (context) => new Onboard()));
+      Navigator.pushReplacement(context,
+          new MaterialPageRoute(builder: (context) => new OnboardOne()));
     });
   }
 
@@ -39,23 +39,6 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
             CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(NowUIColors.black),
             ),
-            new Container(
-                padding: EdgeInsets.only(left: 30, right: 30),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  children: <Widget>[
-                    Column(children: <Widget>[
-                      Text(
-                        'Version: 1.0',
-                        style: GoogleFonts.urbanist(
-                          color: NowUIColors.black,
-                          fontSize: 12,
-                        ),
-                      ),
-                    ]),
-                  ],
-                )),
           ],
         ),
       ),
