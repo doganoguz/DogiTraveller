@@ -2,7 +2,7 @@
 
 //bu bir Doğan Oğuz projesidir.
 
-//Kuyumu kazmaya çalıştığın kürek benimse SAPINA DİKKAT ET ASLANIMMM EYVALLAH
+//MAYINLARDA SESSİZDİR. TA Kİ ÜSTÜNE BASANA KADAR.! EYVALLAH
 
 import 'package:dogitravellerui/constant/color.dart';
 import 'package:dogitravellerui/page/onboarding/one.dart';

@@ -147,7 +147,7 @@ class _EmailState extends State<Email> {
               ),
             ),
             SizedBox(
-              height: 17,
+              height: 20,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -164,6 +164,7 @@ class _EmailState extends State<Email> {
                 ),
                 CupertinoSwitch(
                   value: _switchValue,
+                  activeColor: NowUIColors.trncu,
                   onChanged: (value) {
                     setState(() {
                       _switchValue = value;

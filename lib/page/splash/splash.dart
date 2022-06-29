@@ -33,12 +33,6 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
             Image.asset(
               'assets/images/logo.png',
             ),
-            SizedBox(
-              height: 25,
-            ),
-            CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(NowUIColors.black),
-            ),
           ],
         ),
       ),

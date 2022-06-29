@@ -189,7 +189,7 @@ class _SignUppState extends State<SignUpp> {
               ),
             ),
             SizedBox(
-              height: 20,
+              height: 80,
             ),
             Container(
                 height: 50.0,
