@@ -1,7 +1,12 @@
+import 'package:dogitravellerui/auth/sign_up.dart';
 import 'package:dogitravellerui/constant/color.dart';
+import 'package:dogitravellerui/page/auth/signUp/name.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
+
+import 'package:simple_icons/simple_icons.dart';
 
 class Login extends StatefulWidget {
   Login({Key? key}) : super(key: key);
@@ -22,6 +27,10 @@ bool _checkbox = true;
 const double iconSize = 18;
 
 class _LoginState extends State<Login> {
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +42,7 @@ class _LoginState extends State<Login> {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             SizedBox(
-              height: 150,
+              height: 120,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +96,7 @@ class _LoginState extends State<Login> {
               ),
             ),
             SizedBox(
-              height: 18,
+              height: 10,
             ),
             Container(
               padding: EdgeInsets.all(8),
@@ -162,7 +171,7 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 SizedBox(
-                  width: 80,
+                  width: 90,
                 ),
                 Text(
                   'Forgot Password?',
@@ -174,7 +183,7 @@ class _LoginState extends State<Login> {
               ],
             ),
             SizedBox(
-              height: 100,
+              height: 90,
             ),
             Container(
                 height: 50.0,
@@ -186,7 +195,12 @@ class _LoginState extends State<Login> {
                     ),
                     side: BorderSide(width: 2, color: NowUIColors.defaultColor),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        //Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SignUpp()));
+                  },
                   child: Text(
                     'Create Account',
                     style: GoogleFonts.urbanist(
@@ -226,11 +240,14 @@ class _LoginState extends State<Login> {
               children: <Widget>[
                 ElevatedButton(
                   onPressed: () {},
-                  child: Icon(Icons.bolt, color: Colors.white),
+                  child: Icon(
+                    SimpleIcons.instagram,
+                    size: iconSize,
+                  ),
                   style: ElevatedButton.styleFrom(
                     shape: CircleBorder(),
                     padding: EdgeInsets.all(5),
-                    primary: NowUIColors.defaultColor, // <-- Button color
+                    primary: NowUIColors.homeclr, // <-- Button color
                     // <-- Splash color
                   ),
                 ),
@@ -239,26 +256,32 @@ class _LoginState extends State<Login> {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Icon(Icons.bolt, color: Colors.white),
-                  style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(5),
-                    primary: NowUIColors.defaultColor, // <-- Button color
-                    // <-- Splash color
+                  child: Icon(
+                    SimpleIcons.google,
+                    size: iconSize,
                   ),
+                  style: ElevatedButton.styleFrom(
+                      shape: CircleBorder(),
+                      padding: EdgeInsets.all(5),
+                      primary: NowUIColors.homeclr // <-- Button color
+                      // <-- Splash color
+                      ),
                 ),
                 SizedBox(
                   width: 50,
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Icon(Icons.bolt, color: Colors.white),
-                  style: ElevatedButton.styleFrom(
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(5),
-                    primary: NowUIColors.defaultColor, // <-- Button color
-                    // <-- Splash color
+                  child: Icon(
+                    SimpleIcons.facebook,
+                    size: iconSize,
                   ),
+                  style: ElevatedButton.styleFrom(
+                      shape: CircleBorder(),
+                      padding: EdgeInsets.all(5),
+                      primary: NowUIColors.homeclr // <-- Button color
+                      // <-- Splash color
+                      ),
                 ),
               ],
             )

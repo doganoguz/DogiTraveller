@@ -21,7 +21,6 @@ Future<void> main() async {
   runApp(MyApp());
 }
 
-//test amk
 class MyApp extends StatefulWidget {
   MyApp({Key key}) : super(key: key);
 
@@ -33,6 +32,14 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    main();
+  }
+
+  void main() {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+    ));
+    runApp(MyApp());
   }
 
   @override
@@ -40,7 +47,6 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         title: 'DogiTraveller',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(backgroundColor: NowUIColors.homeclr),
         initialRoute: '/splash',
         routes: <String, WidgetBuilder>{
           '/splash': (BuildContext context) => new Splash(),
