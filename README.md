@@ -1,16 +1,35 @@
-# dogitravellerui
+# DogiTraveller
 
-A new Flutter project.
+<b>DogiTraveller Nedir?</b>
+<br>
+✈️ DogiTraveller, Flutter ile yapılmış bir UI çalışmasıdır.
+(Zamanla güncellenecektir)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Önizleme
+![](https://imgyukle.com/f/2022/06/29/Ving46.png)
+![](https://imgyukle.com/f/2022/06/29/Vincmx.png)
 
-A few resources to get you started if this is your first Flutter project:
+# Mimari
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [x] Constant
+- [x] Utils
+- [x] Helper
+- [x] Models
+- [x] Page
+- [x] Widget
+- [x] Test
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Tasarım Araçları
+
+- [x] Figma 🎨
+</a>
+
+
+
+# Geliştirici Araçları
+
+- [x] Visual Studio Code 👨🏼‍💻
+
+<img  width="45px" heigth="45px" src="https://media4.giphy.com/media/EOpZ7XsVfTN2E/giphy.gif" />
+💙 <a href="https://pub.dev/" target="_blank"><b>pub.dev</b></a> Eyvallah!
