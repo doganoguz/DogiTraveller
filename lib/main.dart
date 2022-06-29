@@ -11,11 +11,11 @@ import 'package:dogitravellerui/page/splash/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+//statusbar color değiştirme
 Future<void> main() async {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: NowUIColors.statusbar, //statusbar color değiştirme
+    statusBarColor: NowUIColors.statusbar,
   ));
-
   WidgetsFlutterBinding.ensureInitialized();
 
   runApp(MyApp());
@@ -32,14 +32,6 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    main();
-  }
-
-  void main() {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-    ));
-    runApp(MyApp());
   }
 
   @override
