@@ -189,7 +189,7 @@ class _SignUppState extends State<SignUpp> {
               ),
             ),
             SizedBox(
-              height: 80,
+              height: 280,
             ),
             Container(
                 height: 50.0,
@@ -216,9 +216,6 @@ class _SignUppState extends State<SignUpp> {
                         fontWeight: FontWeight.w600),
                   ),
                 )),
-            SizedBox(
-              height: 20,
-            ),
           ],
         )),
       ),

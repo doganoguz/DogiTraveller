@@ -2,6 +2,7 @@ import 'package:dogitravellerui/auth/sign_up.dart';
 import 'package:dogitravellerui/constant/color.dart';
 import 'package:dogitravellerui/page/auth/login.dart';
 import 'package:dogitravellerui/page/auth/signUp/name.dart';
+import 'package:dogitravellerui/page/auth/signUp/password.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -174,7 +175,7 @@ class _EmailState extends State<Email> {
               ],
             ),
             SizedBox(
-              height: 80,
+              height: 280,
             ),
             Container(
                 height: 50.0,
@@ -187,7 +188,12 @@ class _EmailState extends State<Email> {
                     ),
                     side: BorderSide(width: 2, color: NowUIColors.trncu),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        //Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Password()));
+                  },
                   child: Text(
                     'Input Password',
                     style: GoogleFonts.urbanist(
