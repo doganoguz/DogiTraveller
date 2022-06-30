@@ -91,6 +91,7 @@ dev_dependencies:
   onboarding: ^3.1.0
   animations: ^1.0.3
   ig_story: ^0.0.4
+  elastic_drawer: ^2.0.2
   
   
   

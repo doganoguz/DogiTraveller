@@ -13,6 +13,19 @@ import 'package:page_transition/page_transition.dart';
 import 'package:google_fonts/google_fonts.dart';
 import "package:ig_story/ig_story.dart";
 
+import 'package:page_animation_transition/animations/bottom_to_top_faded_transition.dart';
+import 'package:page_animation_transition/animations/bottom_to_top_transition.dart';
+import 'package:page_animation_transition/animations/fade_animation_transition.dart';
+import 'package:page_animation_transition/animations/left_to_right_faded_transition.dart';
+import 'package:page_animation_transition/animations/left_to_right_transition.dart';
+import 'package:page_animation_transition/animations/right_to_left_faded_transition.dart';
+import 'package:page_animation_transition/animations/right_to_left_transition.dart';
+import 'package:page_animation_transition/animations/rotate_animation_transition.dart';
+import 'package:page_animation_transition/animations/scale_animation_transition.dart';
+import 'package:page_animation_transition/animations/top_to_bottom_faded.dart';
+import 'package:page_animation_transition/animations/top_to_bottom_transition.dart';
+import 'package:page_animation_transition/page_animation_transition.dart';
+
 class OnboardTwo extends StatefulWidget {
   @override
   _OnboardTwoState createState() => _OnboardTwoState();
@@ -139,11 +152,9 @@ class _OnboardTwoState extends State<OnboardTwo> {
                             ),
                           ),
                           onPressed: () {
-                            Navigator.pushReplacement(
-                                //Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => OnboardThree()));
+                            Navigator.of(context).push(PageAnimationTransition(
+                                page: OnboardThree(),
+                                pageAnimationType: ScaleAnimationTransition()));
                           },
                         )),
                   ),
