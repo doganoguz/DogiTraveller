@@ -1,5 +1,6 @@
 import 'package:dogitravellerui/auth/sign_up.dart';
 import 'package:dogitravellerui/constant/color.dart';
+import 'package:dogitravellerui/page/auth/password_reset.dart';
 import 'package:dogitravellerui/page/auth/signUp/name.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
@@ -157,6 +158,8 @@ class _LoginState extends State<Login> {
               children: <Widget>[
                 Checkbox(
                   value: _checkbox,
+                  activeColor: NowUIColors.trncu,
+                  checkColor: NowUIColors.beyaz,
                   onChanged: (value) {
                     setState(() {
                       _checkbox = !_checkbox;
@@ -173,11 +176,20 @@ class _LoginState extends State<Login> {
                 SizedBox(
                   width: 90,
                 ),
-                Text(
-                  'Forgot Password?',
-                  style: GoogleFonts.urbanist(
-                    color: NowUIColors.defaultColor,
-                    fontSize: 14,
+                new GestureDetector(
+                  onTap: () {
+                    Navigator.pushReplacement(
+                        //Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ForgotPassword()));
+                  },
+                  child: new Text(
+                    'Forgot Password?',
+                    style: GoogleFonts.urbanist(
+                      color: NowUIColors.defaultColor,
+                      fontSize: 14,
+                    ),
                   ),
                 ),
               ],
@@ -240,14 +252,12 @@ class _LoginState extends State<Login> {
               children: <Widget>[
                 ElevatedButton(
                   onPressed: () {},
-                  child: Icon(
-                    SimpleIcons.instagram,
-                    size: iconSize,
-                  ),
+                  child: Icon(SimpleIcons.instagram,
+                      size: iconSize, color: NowUIColors.black),
                   style: ElevatedButton.styleFrom(
                     shape: CircleBorder(),
                     padding: EdgeInsets.all(5),
-                    primary: NowUIColors.homeclr, // <-- Button color
+                    primary: NowUIColors.socialbtn, // <-- Button color
                     // <-- Splash color
                   ),
                 ),
@@ -256,14 +266,12 @@ class _LoginState extends State<Login> {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Icon(
-                    SimpleIcons.google,
-                    size: iconSize,
-                  ),
+                  child: Icon(SimpleIcons.google,
+                      size: iconSize, color: NowUIColors.black),
                   style: ElevatedButton.styleFrom(
                       shape: CircleBorder(),
                       padding: EdgeInsets.all(5),
-                      primary: NowUIColors.homeclr // <-- Button color
+                      primary: NowUIColors.socialbtn // <-- Button color
                       // <-- Splash color
                       ),
                 ),
@@ -272,14 +280,12 @@ class _LoginState extends State<Login> {
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Icon(
-                    SimpleIcons.facebook,
-                    size: iconSize,
-                  ),
+                  child: Icon(SimpleIcons.facebook,
+                      size: iconSize, color: NowUIColors.black),
                   style: ElevatedButton.styleFrom(
                       shape: CircleBorder(),
                       padding: EdgeInsets.all(5),
-                      primary: NowUIColors.homeclr // <-- Button color
+                      primary: NowUIColors.socialbtn // <-- Button color
                       // <-- Splash color
                       ),
                 ),

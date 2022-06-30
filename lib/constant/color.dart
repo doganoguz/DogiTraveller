@@ -6,6 +6,7 @@ class NowUIColors {
   static const Color homeclr = Color(0xFF1F1D2B);
   static const Color formfield = Color(0xFF0C0507);
   static const Color form = Color(0xFFE8E8E8);
+  static const Color socialbtn = Color(0xFFF3F3F3);
 
   static const Color statusbar = Color(0xFF252836);
   static const Color acikyesil = Color(0xFF0CFEBC);
