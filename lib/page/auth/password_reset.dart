@@ -9,6 +9,18 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:simple_icons/simple_icons.dart';
+import 'package:page_animation_transition/animations/bottom_to_top_faded_transition.dart';
+import 'package:page_animation_transition/animations/bottom_to_top_transition.dart';
+import 'package:page_animation_transition/animations/fade_animation_transition.dart';
+import 'package:page_animation_transition/animations/left_to_right_faded_transition.dart';
+import 'package:page_animation_transition/animations/left_to_right_transition.dart';
+import 'package:page_animation_transition/animations/right_to_left_faded_transition.dart';
+import 'package:page_animation_transition/animations/right_to_left_transition.dart';
+import 'package:page_animation_transition/animations/rotate_animation_transition.dart';
+import 'package:page_animation_transition/animations/scale_animation_transition.dart';
+import 'package:page_animation_transition/animations/top_to_bottom_faded.dart';
+import 'package:page_animation_transition/animations/top_to_bottom_transition.dart';
+import 'package:page_animation_transition/page_animation_transition.dart';
 
 class ForgotPassword extends StatefulWidget {
   ForgotPassword({Key? key}) : super(key: key);
@@ -161,7 +173,11 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                     ),
                     side: BorderSide(width: 2, color: NowUIColors.trncu),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(PageAnimationTransition(
+                        page: Login(),
+                        pageAnimationType: ScaleAnimationTransition()));
+                  },
                   child: Text(
                     'Submit',
                     style: GoogleFonts.urbanist(
