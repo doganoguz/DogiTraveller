@@ -55,6 +55,7 @@ dev_dependencies:
   text_scroll: ^0.0.4
   lottie: ^1.3.0
   story_view: ^0.13.2
+  salomon_bottom_bar: ^3.3.1
   
   dio: ^4.0.0
   flutter_bounceable: ^1.0.1
@@ -92,6 +93,9 @@ dev_dependencies:
   animations: ^1.0.3
   ig_story: ^0.0.4
   elastic_drawer: ^2.0.2
+  lamp_bottom_navigation: ^0.1.1
+ 
+
   
   
   

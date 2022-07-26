@@ -457,6 +457,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.3"
+  lamp_bottom_navigation:
+    dependency: "direct dev"
+    description:
+      name: lamp_bottom_navigation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   lint:
     dependency: transitive
     description:
@@ -667,6 +674,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.4"
+  salomon_bottom_bar:
+    dependency: "direct dev"
+    description:
+      name: salomon_bottom_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.3.1"
   settings_ui:
     dependency: "direct dev"
     description:

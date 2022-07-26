@@ -1,4 +1,3 @@
-import 'package:dogitravellerui/auth/sign_up.dart';
 import 'package:dogitravellerui/constant/color.dart';
 import 'package:dogitravellerui/page/auth/login.dart';
 import 'package:dogitravellerui/page/auth/signUp/name.dart';

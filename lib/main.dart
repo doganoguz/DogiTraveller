@@ -5,6 +5,7 @@
 //MAYINLARDA SESSİZDİR. TA Kİ ÜSTÜNE BASANA KADAR.! EYVALLAH
 
 import 'package:dogitravellerui/constant/color.dart';
+import 'package:dogitravellerui/page/dashboard/menu.dart';
 import 'package:dogitravellerui/page/onboarding/one.dart';
 import 'package:dogitravellerui/page/splash/splash.dart';
 
@@ -42,6 +43,7 @@ class _MyAppState extends State<MyApp> {
         initialRoute: '/splash',
         routes: <String, WidgetBuilder>{
           '/splash': (BuildContext context) => new Splash(),
+          '/home': (BuildContext context) => HomePage(),
         });
   }
 }

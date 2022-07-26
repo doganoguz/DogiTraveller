@@ -3,11 +3,11 @@ import 'dart:ui' show Color;
 class NowUIColors {
   static const Color black = Color(0xFF000000);
 
-  static const Color homeclr = Color(0xFF1F1D2B);
+  static const Color homecolorr = Color(0xFFE5E5E5);
   static const Color formfield = Color(0xFF0C0507);
   static const Color form = Color(0xFFE8E8E8);
   static const Color socialbtn = Color(0xFFF3F3F3);
-
+  static const Color textfieldColor = Color(0xFFFAFAFA);
   static const Color statusbar = Color(0xFF252836);
   static const Color acikyesil = Color(0xFF0CFEBC);
   static const Color yesilkoyu = Color(0xFF22B07D);
@@ -16,9 +16,11 @@ class NowUIColors {
   static const Color mavibtn = Color(0xFFFF215BF0);
   static const Color textField = Color(0xFF1F1D2B);
   static const Color splash = Color(0xFFE5E5E5);
+  static const Color yazi = Color(0xFF0C0507);
 
   static const Color card = Color(0xFFF252836);
   static const Color beyaz = Color(0xFFFFFFFF);
+  static const Color white = Color(0xFFFFFFFF);
   static const Color dashbeyaz = Color(0xFFFFEFEFE);
 
   static const Color signupbtn = Color(0xFFf5f5f5);
@@ -26,7 +28,7 @@ class NowUIColors {
 
   static const Color anasite = Color(0xFF377dff);
   static const Color textColor = Color(0xFF8A8D9F);
-  static const Color morcuk = Color(0xFF676ABB);
+  static const Color yaziRenk = Color(0xFFBABABA);
   static const Color altmenubg = Color(0xFF21325B);
   static const Color bartrn = Color(0xFFfd7e14);
   static const Color loginbg = Color(0xFF16151E);

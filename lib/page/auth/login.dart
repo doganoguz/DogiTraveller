@@ -1,7 +1,8 @@
-import 'package:dogitravellerui/auth/sign_up.dart';
 import 'package:dogitravellerui/constant/color.dart';
 import 'package:dogitravellerui/page/auth/password_reset.dart';
 import 'package:dogitravellerui/page/auth/signUp/name.dart';
+import 'package:dogitravellerui/page/dashboard/dashboard.dart';
+import 'package:dogitravellerui/page/dashboard/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -50,6 +51,8 @@ class _LoginState extends State<Login> {
               children: <Widget>[
                 Image.asset(
                   'assets/images/logo.png',
+                  height: 90,
+                  width: 90,
                 ),
               ],
             ),
@@ -235,7 +238,12 @@ class _LoginState extends State<Login> {
                     ),
                     side: BorderSide(width: 2, color: NowUIColors.trncu),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                        //Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()));
+                  },
                   child: Text(
                     'Sign in',
                     style: GoogleFonts.urbanist(
