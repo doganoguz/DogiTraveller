@@ -112,7 +112,7 @@ packages:
       name: collection
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.16.0"
+    version: "1.15.0"
   confetti:
     dependency: "direct dev"
     description:
@@ -231,7 +231,7 @@ packages:
       name: fake_async
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.3.0"
+    version: "1.2.0"
   ffi:
     dependency: transitive
     description:
@@ -456,7 +456,6 @@ packages:
       name: js
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.6.3"
   lamp_bottom_navigation:
     dependency: "direct dev"
@@ -465,9 +464,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.1"
-=======
-    version: "0.6.4"
->>>>>>> cbf51d47dab1c2198d96ad7846f4f7a46fca92f2
   lint:
     dependency: transitive
     description:
@@ -509,7 +505,7 @@ packages:
       name: material_color_utilities
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.4"
+    version: "0.1.3"
   meta:
     dependency: transitive
     description:
@@ -572,7 +568,7 @@ packages:
       name: path
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.8.1"
+    version: "1.8.0"
   path_drawing:
     dependency: transitive
     description:
@@ -759,7 +755,7 @@ packages:
       name: source_span
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.8.2"
+    version: "1.8.1"
   sqflite:
     dependency: transitive
     description:
@@ -829,7 +825,7 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.9"
+    version: "0.4.8"
   text_scroll:
     dependency: "direct dev"
     description:
@@ -927,7 +923,7 @@ packages:
       name: vector_math
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.2"
+    version: "2.1.1"
   video_player:
     dependency: "direct dev"
     description:
@@ -999,6 +995,6 @@ packages:
     source: hosted
     version: "1.1.2"
 sdks:
-  dart: ">=2.17.0-0 <3.0.0"
+  dart: ">=2.16.2 <3.0.0"
   flutter: ">=2.10.0"
   flutter_sdk: ">=2.0.0"

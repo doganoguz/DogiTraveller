@@ -129,6 +129,11 @@ flutter:
      - assets/images/homelg.png
      - assets/images/three.jpg
      - assets/images/err.png
+     - assets/images/kuta.png
+     - assets/images/bra.png
+     - assets/images/topmenu/one.png
+     - assets/images/topmenu/two.png
+     - assets/images/topmenu/three.png
      
 
   # An image asset can refer to one or more resolution-specific "variants", see

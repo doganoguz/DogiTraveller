@@ -154,6 +154,7 @@ class _DashboardState extends State<Dashboard> {
               elevation: 0.0,
               titleSpacing: 10.0,
               backgroundColor: NowUIColors.homecolorr,
+              centerTitle: true,
               leading: new IconButton(
                 icon: new Icon(
                   Iconsax.menu,
@@ -163,13 +164,20 @@ class _DashboardState extends State<Dashboard> {
                   _handleMenuButtonPressed();
                 },
               ),
-              centerTitle: true,
               title: Image.asset(
                 'assets/images/logo.png',
                 height: 90,
                 width: 90,
               ),
-              actions: <Widget>[],
+              actions: <Widget>[
+                new IconButton(
+                  icon: new Icon(
+                    Iconsax.notification,
+                    color: NowUIColors.black,
+                  ),
+                  onPressed: () {},
+                ),
+              ],
             ),
             backgroundColor: NowUIColors.homecolorr,
             body: SingleChildScrollView(
@@ -286,117 +294,120 @@ class _DashboardState extends State<Dashboard> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            ElevatedButton(
-                              onPressed: () {
-                                setState(() {});
-                              },
-                              child: Text(
-                                "Bitcoin 🔥",
-                                style: GoogleFonts.montserrat(
-                                  color: NowUIColors.beyaz,
-                                  fontSize: 15,
+                            Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  shape: StadiumBorder(),
-                                  primary: NowUIColors.anasite,
-                                  onPrimary: NowUIColors.card),
-                            ),
+                                child: Row(
+                                  children: <Widget>[
+                                    new InkWell(
+                                      onTap: () {
+                                        //print test
+                                      },
+                                      child: Container(
+                                        alignment: Alignment.centerLeft,
+                                        height: 50,
+                                        width: 60,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15.0),
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/topmenu/one.png"),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 15),
+                                      child: Text(
+                                        'Forest',
+                                        style: GoogleFonts.urbanist(
+                                            color: NowUIColors.yazi,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ],
+                                )),
                             SizedBox(
                               width: 8,
                             ),
-                            ElevatedButton(
-                              onPressed: () {
-                                setState(() {});
-                              },
-                              child: Text(
-                                "Ethereum",
-                                style: GoogleFonts.montserrat(
-                                  color: NowUIColors.beyaz,
-                                  fontSize: 15,
+                            Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  shape: StadiumBorder(),
-                                  primary: NowUIColors.anasite,
-                                  onPrimary: NowUIColors.card),
-                            ),
+                                child: Row(
+                                  children: <Widget>[
+                                    new InkWell(
+                                      onTap: () {
+                                        //print test
+                                      },
+                                      child: Container(
+                                        alignment: Alignment.centerLeft,
+                                        height: 50,
+                                        width: 60,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15.0),
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/topmenu/two.png"),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 15),
+                                      child: Text(
+                                        'Beach',
+                                        style: GoogleFonts.urbanist(
+                                            color: NowUIColors.yazi,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ],
+                                )),
                             SizedBox(
                               width: 8,
                             ),
-                            ElevatedButton(
-                              onPressed: () {
-                                setState(() {});
-                              },
-                              child: Text(
-                                "BNB",
-                                style: GoogleFonts.montserrat(
-                                  color: NowUIColors.beyaz,
-                                  fontSize: 15,
+                            Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  shape: StadiumBorder(),
-                                  primary: NowUIColors.anasite,
-                                  onPrimary: NowUIColors.card),
-                            ),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            ElevatedButton(
-                              onPressed: () {
-                                setState(() {});
-                              },
-                              child: Text(
-                                "Solana",
-                                style: GoogleFonts.montserrat(
-                                  color: NowUIColors.beyaz,
-                                  fontSize: 15,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  shape: StadiumBorder(),
-                                  primary: NowUIColors.anasite,
-                                  onPrimary: NowUIColors.card),
-                            ),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            ElevatedButton(
-                              onPressed: () {
-                                setState(() {});
-                              },
-                              child: Text(
-                                "XRP",
-                                style: GoogleFonts.montserrat(
-                                  color: NowUIColors.beyaz,
-                                  fontSize: 15,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  shape: StadiumBorder(),
-                                  primary: NowUIColors.anasite,
-                                  onPrimary: NowUIColors.card),
-                            ),
-                            SizedBox(
-                              width: 8,
-                            ),
-                            ElevatedButton(
-                              onPressed: () {
-                                setState(() {});
-                              },
-                              child: Text(
-                                "All",
-                                style: GoogleFonts.montserrat(
-                                  color: NowUIColors.beyaz,
-                                  fontSize: 15,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                  shape: StadiumBorder(),
-                                  primary: NowUIColors.anasite,
-                                  onPrimary: NowUIColors.card),
-                            ),
+                                child: Row(
+                                  children: <Widget>[
+                                    new InkWell(
+                                      onTap: () {
+                                        //print test
+                                      },
+                                      child: Container(
+                                        alignment: Alignment.centerLeft,
+                                        height: 50,
+                                        width: 60,
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(15.0),
+                                          image: DecorationImage(
+                                            image: AssetImage(
+                                                "assets/images/topmenu/three.png"),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 15),
+                                      child: Text(
+                                        'Mountain',
+                                        style: GoogleFonts.urbanist(
+                                            color: NowUIColors.yazi,
+                                            fontSize: 16,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  ],
+                                )),
                           ],
                         ),
                       ),
@@ -405,168 +416,184 @@ class _DashboardState extends State<Dashboard> {
                       ),
                       Row(
                         children: <Widget>[
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Card(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: new InkWell(
-                                    onTap: () {
-                                      //print test
-                                    },
-                                    child: Container(
-                                      height: 300,
-                                      width: 170,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        color: NowUIColors.anasite,
-                                        image: DecorationImage(
-                                          colorFilter: new ColorFilter.mode(
-                                              Colors.black.withOpacity(0.4),
-                                              BlendMode.dstATop),
-                                          image: NetworkImage(
-                                              "https://images.unsplash.com/photo-1621571029036-1573d2b1dc5c?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331"),
-                                          fit: BoxFit.cover,
-                                          alignment: Alignment.topCenter,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                          top: 200.0,
-                                          left: 10,
-                                        ),
-                                        child: Wrap(
-                                          spacing: 30,
-                                          children: <Widget>[
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "Domino Technique",
-                                                  style: TextStyle(
-                                                      color: NowUIColors.beyaz,
-                                                      fontSize: 15,
-                                                      fontFamily: 'Montserrat',
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 7,
-                                            ),
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "7.000+ Students ❤️\u200d",
-                                                  style: TextStyle(
-                                                    color: NowUIColors.beyaz,
-                                                    fontSize: 12,
-                                                    fontFamily: 'Montserrat',
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 25,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          new GestureDetector(
+                            onTap: () {
+                              print("choosecategory");
+                            },
+                            child: new Text(
+                              "Favorite Place",
+                              style: GoogleFonts.urbanist(
+                                  color: NowUIColors.yazi,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                SizedBox(
-                                  height: 70,
-                                ),
-                                Card(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: new InkWell(
-                                    onTap: () {
-                                      //print test
-                                    },
-                                    child: Container(
-                                      height: 300,
-                                      width: 170,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        color: NowUIColors.anasite,
-                                        image: DecorationImage(
-                                          colorFilter: new ColorFilter.mode(
-                                              Colors.black.withOpacity(0.3),
-                                              BlendMode.dstATop),
-                                          image: NetworkImage(
-                                              "https://wallpaperaccess.com/full/4496970.jpg"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 200.0, left: 10),
-                                        child: Wrap(
-                                          spacing: 40,
-                                          children: <Widget>[
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "Bumerang ile \nKripto Para Eğitimi",
-                                                  style: TextStyle(
-                                                      color: NowUIColors.beyaz,
-                                                      fontSize: 15,
-                                                      fontFamily: 'Montserrat',
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 7,
-                                            ),
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "3.000+ Students 🤩\u200d",
-                                                  style: TextStyle(
-                                                    color: NowUIColors.beyaz,
-                                                    fontSize: 12,
-                                                    fontFamily: 'Montserrat',
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 25,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          SizedBox(
+                            width: 175,
+                          ),
+                          new GestureDetector(
+                            onTap: () {
+                              print("Comin soon see all");
+                            },
+                            child: new Text(
+                              "Explore",
+                              style: GoogleFonts.urbanist(
+                                color: NowUIColors.yaziRenk,
+                                fontSize: 14,
+                              ),
                             ),
                           ),
                         ],
+                      ),
+                      SizedBox(height: 10),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(children: <Widget>[
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(35),
+                            ),
+                            child: new InkWell(
+                              onTap: () {
+                                //print test
+                              },
+                              child: Container(
+                                height: 256,
+                                width: 186,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(25.0),
+                                  color: NowUIColors.anasite,
+                                  image: DecorationImage(
+                                    image: AssetImage("assets/images/kuta.png"),
+                                    fit: BoxFit.cover,
+                                    alignment: Alignment.topCenter,
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    top: 200.0,
+                                    left: 10,
+                                  ),
+                                  child: Wrap(
+                                    spacing: 30,
+                                    children: <Widget>[],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(35),
+                            ),
+                            child: new InkWell(
+                              onTap: () {
+                                //print test
+                              },
+                              child: Container(
+                                height: 256,
+                                width: 186,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(25.0),
+                                  color: NowUIColors.anasite,
+                                  image: DecorationImage(
+                                    image: AssetImage("assets/images/bra.png"),
+                                    fit: BoxFit.cover,
+                                    alignment: Alignment.topCenter,
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    top: 200.0,
+                                    left: 10,
+                                  ),
+                                  child: Wrap(
+                                    spacing: 30,
+                                    children: <Widget>[],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(35),
+                            ),
+                            child: new InkWell(
+                              onTap: () {
+                                //print test
+                              },
+                              child: Container(
+                                height: 256,
+                                width: 186,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(25.0),
+                                  image: DecorationImage(
+                                    image: AssetImage("assets/images/kuta.png"),
+                                    fit: BoxFit.cover,
+                                    alignment: Alignment.topCenter,
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    top: 200.0,
+                                    left: 10,
+                                  ),
+                                  child: Wrap(
+                                    spacing: 30,
+                                    children: <Widget>[],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(35),
+                            ),
+                            child: new InkWell(
+                              onTap: () {
+                                //print test
+                              },
+                              child: Container(
+                                height: 256,
+                                width: 186,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(25.0),
+                                  color: NowUIColors.anasite,
+                                  image: DecorationImage(
+                                    colorFilter: new ColorFilter.mode(
+                                        Colors.black.withOpacity(0.4),
+                                        BlendMode.dstATop),
+                                    image: NetworkImage(
+                                        "https://images.unsplash.com/photo-1621571029036-1573d2b1dc5c?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331"),
+                                    fit: BoxFit.cover,
+                                    alignment: Alignment.topCenter,
+                                  ),
+                                ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                    top: 200.0,
+                                    left: 10,
+                                  ),
+                                  child: Wrap(
+                                    spacing: 30,
+                                    children: <Widget>[],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ]),
                       ),
                       Row(
                         children: <Widget>[
