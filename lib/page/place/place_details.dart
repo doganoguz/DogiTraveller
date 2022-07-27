@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 class PlaceDetails extends StatefulWidget {
@@ -8,6 +10,15 @@ class PlaceDetails extends StatefulWidget {
 }
 
 class _PlaceDetailsState extends State<PlaceDetails> {
+  final sikiciSayac = 10;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    print(sikiciSayac + 10);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container();
