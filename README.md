@@ -7,8 +7,8 @@
 
 
 # Önizleme
-![](https://imgyukle.com/f/2022/06/29/Ving46.png)
-![](https://imgyukle.com/f/2022/06/29/Vincmx.png)
+![](https://i.hizliresim.com/4223dyk.png)
+![](https://i.hizliresim.com/ofeiwfq.png)
 
 # Mimari
 
