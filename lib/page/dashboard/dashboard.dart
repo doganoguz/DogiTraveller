@@ -471,12 +471,55 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(
-                                    top: 200.0,
+                                    top: 170.0,
                                     left: 10,
                                   ),
                                   child: Wrap(
                                     spacing: 30,
-                                    children: <Widget>[],
+                                    children: <Widget>[
+                                      Row(
+                                        children: <Widget>[
+                                          Text(
+                                            "Kuta Beach",
+                                            style: GoogleFonts.urbanist(
+                                                color: NowUIColors.white,
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w600),
+                                          ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: <Widget>[
+                                          Text(
+                                            "📍\u200d Bali, Indonesia",
+                                            style: GoogleFonts.urbanist(
+                                                color: NowUIColors.white,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.w400),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 7,
+                                      ),
+                                      Row(
+                                        children: <Widget>[
+                                          Image(
+                                              image: AssetImage(
+                                                  "assets/images/star.png")),
+                                          SizedBox(
+                                            width: 7,
+                                          ),
+                                          Text(
+                                            "(4.8)",
+                                            style: GoogleFonts.urbanist(
+                                                color: NowUIColors.white,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.w400),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -507,12 +550,55 @@ class _DashboardState extends State<Dashboard> {
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(
-                                    top: 200.0,
+                                    top: 170.0,
                                     left: 10,
                                   ),
                                   child: Wrap(
                                     spacing: 30,
-                                    children: <Widget>[],
+                                    children: <Widget>[
+                                      Row(
+                                        children: <Widget>[
+                                          Text(
+                                            "Bromo Mountain",
+                                            style: GoogleFonts.urbanist(
+                                                color: NowUIColors.white,
+                                                fontSize: 20,
+                                                fontWeight: FontWeight.w600),
+                                          ),
+                                        ],
+                                      ),
+                                      Row(
+                                        children: <Widget>[
+                                          Text(
+                                            "📍\u200d Jawa Ti, Indonesia",
+                                            style: GoogleFonts.urbanist(
+                                                color: NowUIColors.white,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.w400),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 7,
+                                      ),
+                                      Row(
+                                        children: <Widget>[
+                                          Image(
+                                              image: AssetImage(
+                                                  "assets/images/star.png")),
+                                          SizedBox(
+                                            width: 7,
+                                          ),
+                                          Text(
+                                            "(4.2)",
+                                            style: GoogleFonts.urbanist(
+                                                color: NowUIColors.white,
+                                                fontSize: 16,
+                                                fontWeight: FontWeight.w400),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ),
@@ -556,359 +642,38 @@ class _DashboardState extends State<Dashboard> {
                           SizedBox(
                             width: 8,
                           ),
-                          Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(35),
-                            ),
-                            child: new InkWell(
-                              onTap: () {
-                                //print test
-                              },
-                              child: Container(
-                                height: 256,
-                                width: 186,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(25.0),
-                                  color: NowUIColors.anasite,
-                                  image: DecorationImage(
-                                    colorFilter: new ColorFilter.mode(
-                                        Colors.black.withOpacity(0.4),
-                                        BlendMode.dstATop),
-                                    image: NetworkImage(
-                                        "https://images.unsplash.com/photo-1621571029036-1573d2b1dc5c?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331"),
-                                    fit: BoxFit.cover,
-                                    alignment: Alignment.topCenter,
-                                  ),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.only(
-                                    top: 200.0,
-                                    left: 10,
-                                  ),
-                                  child: Wrap(
-                                    spacing: 30,
-                                    children: <Widget>[],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
                         ]),
                       ),
-                      Row(
-                        children: <Widget>[
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Card(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: new InkWell(
-                                    onTap: () {
-                                      //print test
-                                    },
-                                    child: Container(
-                                      height: 180,
-                                      width: 170,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        color: NowUIColors.anasite,
-                                        image: DecorationImage(
-                                          colorFilter: new ColorFilter.mode(
-                                              Colors.black.withOpacity(0.4),
-                                              BlendMode.dstATop),
-                                          image: NetworkImage(
-                                              "https://images.unsplash.com/photo-1616531770192-6eaea74c2456?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                          top: 130.0,
-                                          left: 10,
-                                        ),
-                                        child: Wrap(
-                                          spacing: 30,
-                                          children: <Widget>[
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "Live Education",
-                                                  style: TextStyle(
-                                                      color: NowUIColors.white,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Montserrat',
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 25,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Card(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: new InkWell(
-                                    onTap: () {
-                                      //print test
-                                    },
-                                    child: Container(
-                                      height: 180,
-                                      width: 170,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        color: NowUIColors.anasite,
-                                        image: DecorationImage(
-                                          colorFilter: new ColorFilter.mode(
-                                              Colors.black.withOpacity(0.3),
-                                              BlendMode.dstATop),
-                                          image: NetworkImage(
-                                              "https://images.unsplash.com/photo-1507878866276-a947ef722fee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"),
-                                          fit: BoxFit.cover,
-                                          alignment: Alignment.topCenter,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 130.0, left: 10),
-                                        child: Wrap(
-                                          spacing: 40,
-                                          children: <Widget>[
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "Vip Education",
-                                                  style: TextStyle(
-                                                      color: NowUIColors.white,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Montserrat',
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 25,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
                       SizedBox(
-                        height: 5,
-                      ),
-                      Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: new InkWell(
-                          onTap: () {
-                            print("ekonomistdanis bastın");
-                          },
-                          child: Container(
-                            height: 165,
-                            width: 420,
-                            decoration: BoxDecoration(
-                              color: NowUIColors.anasite,
-                              borderRadius: BorderRadius.circular(15.0),
-                              image: DecorationImage(
-                                colorFilter: new ColorFilter.mode(
-                                    Colors.black.withOpacity(0.3),
-                                    BlendMode.dstATop),
-                                image: NetworkImage(
-                                    "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.only(top: 100, left: 10),
-                              child: Row(
-                                children: <Widget>[
-                                  Text(
-                                    "Technical Analysis",
-                                    style: TextStyle(
-                                        color: NowUIColors.white,
-                                        fontSize: 16,
-                                        fontFamily: 'Montserrat',
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        height: 10,
                       ),
                       Row(
                         children: <Widget>[
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                new GestureDetector(
-                                  onTap: () {},
-                                  child: new Text(
-                                    "Services",
-                                    style: GoogleFonts.montserrat(
-                                        color: NowUIColors.text,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                Card(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: new InkWell(
-                                    onTap: () {
-                                      //print test
-                                    },
-                                    child: Container(
-                                      height: 250,
-                                      width: 170,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        color: NowUIColors.anasite,
-                                        image: DecorationImage(
-                                          colorFilter: new ColorFilter.mode(
-                                              Colors.black.withOpacity(0.4),
-                                              BlendMode.dstATop),
-                                          image: NetworkImage(
-                                              "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                          top: 200.0,
-                                          left: 10,
-                                        ),
-                                        child: Wrap(
-                                          spacing: 30,
-                                          children: <Widget>[
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "Conference",
-                                                  style: TextStyle(
-                                                      color: NowUIColors.white,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Montserrat',
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          new GestureDetector(
+                            onTap: () {
+                              print("choosecategory");
+                            },
+                            child: new Text(
+                              "Popular Package",
+                              style: GoogleFonts.urbanist(
+                                  color: NowUIColors.yazi,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                SizedBox(
-                                  height: 40,
-                                ),
-                                Card(
-                                  shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: new InkWell(
-                                    onTap: () {
-                                      //print test
-                                    },
-                                    child: Container(
-                                      height: 250,
-                                      width: 170,
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        color: NowUIColors.anasite,
-                                        image: DecorationImage(
-                                          colorFilter: new ColorFilter.mode(
-                                              Colors.black.withOpacity(0.3),
-                                              BlendMode.dstATop),
-                                          image: NetworkImage(
-                                              "https://images.unsplash.com/photo-1467664631004-58beab1ece0d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170"),
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                      child: Padding(
-                                        padding: const EdgeInsets.only(
-                                            top: 200.0, left: 10),
-                                        child: Wrap(
-                                          spacing: 40,
-                                          children: <Widget>[
-                                            Row(
-                                              children: <Widget>[
-                                                Text(
-                                                  "Consultancy",
-                                                  style: TextStyle(
-                                                      color: NowUIColors.white,
-                                                      fontSize: 16,
-                                                      fontFamily: 'Montserrat',
-                                                      fontWeight:
-                                                          FontWeight.bold),
-                                                ),
-                                              ],
-                                            ),
-                                            SizedBox(
-                                              height: 25,
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
+                          SizedBox(
+                            width: 155,
+                          ),
+                          new GestureDetector(
+                            onTap: () {
+                              print("Comin soon see all");
+                            },
+                            child: new Text(
+                              "See All",
+                              style: GoogleFonts.urbanist(
+                                color: NowUIColors.yaziRenk,
+                                fontSize: 14,
+                              ),
                             ),
                           ),
                         ],

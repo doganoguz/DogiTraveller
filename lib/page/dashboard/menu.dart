@@ -43,6 +43,7 @@ class _HomePageState extends State<HomePage> {
           items: [
             /// Home
             SalomonBottomBarItem(
+              unselectedColor: NowUIColors.black,
               icon: Icon(Iconsax.home),
               title: Text("Home"),
               selectedColor: NowUIColors.black,
@@ -51,20 +52,20 @@ class _HomePageState extends State<HomePage> {
             /// Likes
             SalomonBottomBarItem(
               icon: Icon(Iconsax.send_2),
-              title: Text("Likes"),
+              title: Text("Send"),
               selectedColor: NowUIColors.trncu,
             ),
 
             /// Search
             SalomonBottomBarItem(
-              icon: Icon(Iconsax.like),
+              icon: Icon(Iconsax.heart),
               title: Text("Search"),
               selectedColor: NowUIColors.trncu,
             ),
 
             /// Profile
             SalomonBottomBarItem(
-              icon: Icon(Iconsax.user_octagon),
+              icon: Icon(Iconsax.user),
               title: Text("Profile"),
               selectedColor: NowUIColors.trncu,
             ),
