@@ -7,8 +7,8 @@
 
 
 # Önizleme
-![](https://imgyukle.com/f/2022/06/29/Ving46.png)
-![](https://imgyukle.com/f/2022/06/29/Vincmx.png)
+![](https://i.hizliresim.com/4223dyk.png)
+![](https://i.hizliresim.com/ofeiwfq.png)
 
 # Mimari
 
@@ -25,6 +25,7 @@
 - [x] Figma 🎨
 - [x] Kaynak: ✈️ <a href="https://www.figma.com/community/file/1124290582495758496" target="_blank"><b>Traveller App UI - Figma Community</b>
 </a>
+
 
 
 
