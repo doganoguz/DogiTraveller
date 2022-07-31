@@ -42,7 +42,7 @@ class _DashboardState extends State<Dashboard> {
         childDecoration: BoxDecoration(
           boxShadow: [
             BoxShadow(
-              color: NowUIColors.anasite,
+              color: NowUIColors.trncu,
               blurRadius: 20.0,
               spreadRadius: 15.0,
               offset: Offset(-3.0, 0.0),
@@ -54,14 +54,14 @@ class _DashboardState extends State<Dashboard> {
           child: Container(
             child: ListTileTheme(
               textColor: NowUIColors.black,
-              iconColor: NowUIColors.anasite,
+              iconColor: NowUIColors.trncu,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: AvatarGlow(
-                      glowColor: NowUIColors.anasite,
+                      glowColor: NowUIColors.trncu,
                       endRadius: 70.0,
                       duration: Duration(milliseconds: 3000),
                       repeat: true,
