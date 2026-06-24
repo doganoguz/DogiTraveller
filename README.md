@@ -3,7 +3,7 @@
 <b>DogiTraveller Nedir?</b>
 <br>
 ✈️  DogiTraveller, Flutter ile yapılmış bir UI çalışmasıdır.
-(Zamanla güncellenecektir)
+
 
 
 # Önizleme
